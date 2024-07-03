@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 :root {
-  --primary-color: #7facd6 ;
-  --secondary-color: #a567be;
+  --primary-color: #749dc4 ;
+  --secondary-color: #544288;
   --extra-light: #f3f4f6;
   --white: #ffffff;
-  --gradient-1: linear-gradient(to bottom right, #b558f7, #1de5e2);
+  --gradient-1: linear-gradient(to bottom right, #7e96c0, #462e6d);
   --gradient-2: linear-gradient(
     to bottom,
     var(--primary-color),
@@ -43,15 +44,22 @@
 
 .btn {
   padding: 0.75rem 1.5rem;
+  font-family: 'Raleway', sans-serif;
   font-size: 1rem;
-  font-weight: 500;
-  color: var(--white);
-  background-image: var(--gradient-2);
+  font-weight: bold;
   outline: none;
   border: none;
   border-radius: 5rem;
   cursor: pointer;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  background-image: linear-gradient(to right , #a5bfcf 0%, #8f62a1 50%, #5188a8 100%);
+  transition: 0.5s;
+  &:hover {
+    background-position: right center;
+  } 
 }
 
 img {
@@ -69,7 +77,8 @@ a {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--white);
-  background-image: var(--gradient-2);
+  /* background-image: linear-gradient(to bottom right, #895cf2 30%, #ffabf4 70%); */
+   background-image: var(--gradient-2);
   border-radius: 100%;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
